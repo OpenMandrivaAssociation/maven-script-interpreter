@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name:           maven-script-interpreter
 Version:        1.1
 Release:        2.0%{?dist}
@@ -46,3 +46,28 @@ API documentation for %{name}.
 
 %files javadoc -f .mfiles-javadoc
 %doc LICENSE NOTICE
+
+
+%changelog
+* Mon Sep 02 2013 Michal Srb <msrb@redhat.com> - 1.1-2
+- Fix BR
+
+* Mon Sep 02 2013 Michal Srb <msrb@redhat.com> - 1.1-1
+- Update to upstream version 1.1
+
+* Mon Aug 05 2013 Michal Srb <msrb@redhat.com> - 1.0-5
+- Adapt to current guidelines
+
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Wed Feb 06 2013 Java SIG <java-devel@lists.fedoraproject.org> - 1.0-2
+- Update for https://fedoraproject.org/wiki/Fedora_19_Maven_Rebuild
+- Replace maven BuildRequires with maven-local
+
+* Tue Jul 24 2012 Tomas Radej <tradej@redhat.com> - 1.0-1
+- Initial version
+
