@@ -5,7 +5,7 @@ Release:        2.2
 Summary:        Maven Script Interpreter
 Group:		Development/Java
 License:        ASL 2.0
-URL:            http://maven.apache.org/shared/maven-script-interpreter/
+URL:            https://maven.apache.org/shared/maven-script-interpreter/
 Source0:        http://central.maven.org/maven2/org/apache/maven/shared/%{name}/%{version}/%{name}-%{version}-source-release.zip
 
 BuildArch:      noarch
